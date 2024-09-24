@@ -1,1 +1,10 @@
+name: Hello World
+on: push
+##variable can be defined at workflow level, job level and step level. Here we are defining at workflow level
 
+jobs:
+    hello-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Echo text
+          run: echo "Hello, world!"
